@@ -1,0 +1,134 @@
+@import url('https://fonts.google.com/specimen/Manrope:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+ --clr-VDgrayishble: hsl(217, 19%, 35%);
+ --clr-Desdarkblue: hsl(214, 17%, 51%);
+ --clr-grayishblue:hsl(212, 23%, 69%);
+ --clr-Lgrayishblue: hsl(210, 46%, 95%);
+ --clr-white:#fff;
+ --ff:'marope';
+ --fw-reg:500;
+ --fw-bold:700;
+ --fs: 13px;
+}
+
+body{
+    font-family: var(--ff);
+    font-size: var(--fs);
+    background: var(--clr-Lgrayishblue);
+}
+
+.wrapper-container{
+    max-width: 1440px;
+    height: 100vh;  
+    display:flex;
+    justify-content: center;
+    align-items: center;  
+}
+.card{
+    display:grid;
+    grid-template-columns: 365px;
+    grid-template-rows: 245px 125px 91px 91px;
+    background: var(--clr-white);
+    border-radius: 0.625em;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+}
+.card-image{ 
+    grid-row: 1/2;
+    background-image: url('../images/drawers.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.card-header{
+    grid-row: 2/3;      
+}
+.card-header h2{
+    color: var(--clr-VDgrayishble);
+    font-weight: var(--fw-bold);
+    font-size: 22px;
+    margin: 35px 35px 20px 35px;    
+}
+
+
+.card-main-text{
+    grid-row:3/4;   
+    margin: 0 35px 20px 35px; 
+    color: var(--clr-grayishblue);
+    font-size: 15px;
+}
+.card-user{
+    grid-row: 4/5;
+    margin: 1em 4em 0 3em;
+    display: flex;
+    justify-content:space-between;
+}
+.user-image img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.user-name{
+    text-align: left;
+    width: 100%;
+    padding: 0 1.25em;
+    line-height: 1.5em;
+    color: var(--clr-VDgrayishble);
+    font-weight: var(--fw-bold);
+    font-size: 14px;
+
+}
+.gray-text{
+    color: var(--clr-grayishblue);
+    font-weight: var(--fw-reg);
+}
+
+.user-shar img{
+   border-radius: 50%; 
+   background:var(--clr-Lgrayishblue); 
+   border:10px solid var(--clr-Lgrayishblue);
+}
+@media(min-width:50em){
+.card{
+    display:grid;
+    grid-template-columns: 322px 455px;
+    grid-template-rows: 133px 91px 91px;
+    } 
+
+.card-image{
+    grid-column: 1/2; 
+    grid-row: 1/4;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+}
+
+.card-header{
+    grid-column: 2/3;   
+    grid-row:1/2;   
+}
+
+.card-main-text{
+    grid-column: 2/3;
+    grid-row:2/3;   
+    margin: 0 50px 20px 40px; 
+}
+.card-user{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin: 0 4em 0 3em;
+}
+
+
+}
