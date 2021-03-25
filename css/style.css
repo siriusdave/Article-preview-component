@@ -23,8 +23,7 @@ body{
     background: var(--clr-Lgrayishblue);
 }
 
-.wrapper-container{
-    
+.wrapper-container{    
     height: 100vh;  
     display:flex;
     justify-content: center;
