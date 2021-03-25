@@ -33,7 +33,7 @@ body{
 .card{
     display:grid;
     grid-template-columns: 365px;
-    grid-template-rows: 245px 125px 91px 91px;
+    grid-template-rows: 245px 150px 91px 91px;
     background: var(--clr-white);
     border-radius: 0.625em;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
@@ -101,8 +101,8 @@ body{
 @media(min-width:50em){
 .card{
     display:grid;
-    grid-template-columns: 322px 455px;
-    grid-template-rows: 133px 91px 91px;
+    grid-template-columns: 300px 445px;
+    grid-template-rows: 125px 90px 80px;
     } 
 
 .card-image{
@@ -118,7 +118,10 @@ body{
     grid-column: 2/3;   
     grid-row:1/2;   
 }
-
+.card-header h2{
+    font-size: 24px;
+    margin: 35px 40px 20px 40px;    
+}
 .card-main-text{
     grid-column: 2/3;
     grid-row:2/3;   
